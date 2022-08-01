@@ -1,0 +1,36 @@
+2022-07-21 09:59:32.497 ERROR [main           ] o.s.b.diagnostics.LoggingFailureAnalysisReporter   : 40 report 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field studentMapper in com.young.test1.service.impl.StudentServiceImpl required a bean of type 'com.young.test1.mapper.StudentMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.young.test1.mapper.StudentMapper' in your configuration.
+
+2022-07-21 10:00:58.096 ERROR [main           ] o.s.b.diagnostics.LoggingFailureAnalysisReporter   : 40 report 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field studentMapper in com.young.test1.service.impl.StudentServiceImpl required a bean of type 'com.young.test1.mapper.StudentMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.young.test1.mapper.StudentMapper' in your configuration.
+

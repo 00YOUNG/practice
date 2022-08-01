@@ -1,0 +1,145 @@
+07-28 13:20:56.590 [main] INFO  com.young.test1.TestApplication - Starting TestApplication using Java 1.8.0_112 on WINDOWS-1EJ7IL9 with PID 4368 (E:\IDEA_code\test\target\classes started by EDY in E:\IDEA_code\test)
+07-28 13:20:56.590 [main] DEBUG com.young.test1.TestApplication - Running with Spring Boot v2.7.1, Spring v5.3.21
+07-28 13:20:56.590 [main] INFO  com.young.test1.TestApplication - No active profile set, falling back to 1 default profile: "default"
+07-28 13:20:57.314 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+07-28 13:20:57.319 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+07-28 13:20:57.320 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+07-28 13:20:57.321 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+07-28 13:20:57.400 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+07-28 13:20:57.400 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 779 ms
+07-28 13:29:13.891 [main] INFO  com.young.test1.TestApplication - Starting TestApplication using Java 1.8.0_112 on WINDOWS-1EJ7IL9 with PID 16468 (E:\IDEA_code\test\target\classes started by EDY in E:\IDEA_code\test)
+07-28 13:29:13.891 [main] DEBUG com.young.test1.TestApplication - Running with Spring Boot v2.7.1, Spring v5.3.21
+07-28 13:29:13.891 [main] INFO  com.young.test1.TestApplication - No active profile set, falling back to 1 default profile: "default"
+07-28 13:29:14.703 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+07-28 13:29:14.708 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+07-28 13:29:14.709 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+07-28 13:29:14.709 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+07-28 13:29:14.792 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+07-28 13:29:14.792 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 870 ms
+07-28 13:29:28.572 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+07-28 13:29:28.585 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+07-28 13:29:28.592 [main] INFO  com.young.test1.TestApplication - Started TestApplication in 15.038 seconds (JVM running for 15.728)
+07-28 13:30:27.860 [main] INFO  com.young.test1.TestApplication - Starting TestApplication using Java 1.8.0_112 on WINDOWS-1EJ7IL9 with PID 10756 (E:\IDEA_code\test\target\classes started by EDY in E:\IDEA_code\test)
+07-28 13:30:27.862 [main] DEBUG com.young.test1.TestApplication - Running with Spring Boot v2.7.1, Spring v5.3.21
+07-28 13:30:27.862 [main] INFO  com.young.test1.TestApplication - No active profile set, falling back to 1 default profile: "default"
+07-28 13:30:28.481 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+07-28 13:30:28.486 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+07-28 13:30:28.487 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+07-28 13:30:28.487 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+07-28 13:30:28.569 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+07-28 13:30:28.569 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 678 ms
+07-28 13:30:29.002 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+07-28 13:30:29.013 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+07-28 13:30:29.020 [main] INFO  com.young.test1.TestApplication - Started TestApplication in 1.638 seconds (JVM running for 2.446)
+07-28 13:33:01.021 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-28 13:33:01.021 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+07-28 13:33:01.022 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+07-28 13:33:01.076 [http-nio-8080-exec-1] ERROR com.young.test1.exception.GlobleExceptionHandle - Required request body is missing: public com.young.test1.response.Response com.young.test1.controller.StudentController.add(com.young.test1.domain.dto.StudentDto) throws java.lang.Exception
+org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.young.test1.response.Response com.young.test1.controller.StudentController.add(com.young.test1.domain.dto.StudentDto) throws java.lang.Exception
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:163)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:133)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+07-28 13:33:02.809 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+07-28 13:33:03.005 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+07-28 13:33:03.025 [http-nio-8080-exec-2] DEBUG c.y.t.mapper.StudentMapper.queryStudentByUserName - ==>  Preparing: select * from tb_student where user_name =? 
+07-28 13:33:03.037 [http-nio-8080-exec-2] DEBUG c.y.t.mapper.StudentMapper.queryStudentByUserName - ==> Parameters: 熊涛(String)
+07-28 13:33:03.079 [http-nio-8080-exec-2] DEBUG c.y.t.mapper.StudentMapper.queryStudentByUserName - <==      Total: 0
+07-28 13:33:03.085 [http-nio-8080-exec-2] DEBUG com.young.test1.mapper.StudentMapper.insert - ==>  Preparing: insert into tb_student(user_name,password,real_name,age,sex) value (?,?,?,?,?) 
+07-28 13:33:03.086 [http-nio-8080-exec-2] DEBUG com.young.test1.mapper.StudentMapper.insert - ==> Parameters: 熊涛(String), do(String), 地身至地(String), 54(Integer), 25(Integer)
+07-28 13:33:03.102 [http-nio-8080-exec-2] DEBUG com.young.test1.mapper.StudentMapper.insert - <==    Updates: 1
+07-28 13:33:03.106 [http-nio-8080-exec-2] DEBUG com.young.test1.mapper.StudentHobbyMapper.insert - ==>  Preparing: insert into tb_student_hobby(student_id,description) values (?,?) 
+07-28 13:33:03.106 [http-nio-8080-exec-2] DEBUG com.young.test1.mapper.StudentHobbyMapper.insert - ==> Parameters: 16(Integer), 张必历采展论山省备展机事来厂据。重外公率(String)
+07-28 13:33:03.121 [http-nio-8080-exec-2] DEBUG com.young.test1.mapper.StudentHobbyMapper.insert - <==    Updates: 1
+07-28 13:33:03.122 [http-nio-8080-exec-2] DEBUG com.young.test1.mapper.StudentHobbyMapper.insert - ==>  Preparing: insert into tb_student_hobby(student_id,description) values (?,?) 
+07-28 13:33:03.122 [http-nio-8080-exec-2] DEBUG com.young.test1.mapper.StudentHobbyMapper.insert - ==> Parameters: 16(Integer), 段方必必转却调路机光百技。铁出头本龙叫严(String)
+07-28 13:33:03.123 [http-nio-8080-exec-2] DEBUG com.young.test1.mapper.StudentHobbyMapper.insert - <==    Updates: 1
+07-28 13:33:14.702 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+07-28 13:33:14.710 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+07-28 13:48:28.175 [main] INFO  com.young.test1.TestApplication - Starting TestApplication using Java 1.8.0_112 on WINDOWS-1EJ7IL9 with PID 15852 (E:\IDEA_code\test\target\classes started by EDY in E:\IDEA_code\test)
+07-28 13:48:28.177 [main] DEBUG com.young.test1.TestApplication - Running with Spring Boot v2.7.1, Spring v5.3.21
+07-28 13:48:28.177 [main] INFO  com.young.test1.TestApplication - No active profile set, falling back to 1 default profile: "default"
+07-28 13:48:29.022 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+07-28 13:48:29.027 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+07-28 13:48:29.028 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+07-28 13:48:29.028 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+07-28 13:48:29.116 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+07-28 13:48:29.116 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 906 ms
+07-28 13:48:29.546 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+07-28 13:48:29.552 [main] INFO  com.young.test1.TestApplication - Started TestApplication in 1.937 seconds (JVM running for 2.65)
+07-28 16:30:26.752 [main] INFO  com.young.test1.TestApplication - Starting TestApplication using Java 1.8.0_112 on WINDOWS-1EJ7IL9 with PID 17424 (E:\IDEA_code\test\target\classes started by EDY in E:\IDEA_code\test)
+07-28 16:30:26.754 [main] DEBUG com.young.test1.TestApplication - Running with Spring Boot v2.7.1, Spring v5.3.21
+07-28 16:30:26.754 [main] INFO  com.young.test1.TestApplication - No active profile set, falling back to 1 default profile: "default"
+07-28 16:30:27.387 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+07-28 16:30:27.392 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+07-28 16:30:27.393 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+07-28 16:30:27.393 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+07-28 16:30:27.479 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+07-28 16:30:27.479 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 698 ms
+07-28 16:30:27.892 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+07-28 16:30:27.903 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+07-28 16:30:27.909 [main] INFO  com.young.test1.TestApplication - Started TestApplication in 1.522 seconds (JVM running for 2.295)
+07-28 16:30:32.602 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-28 16:30:32.602 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+07-28 16:30:32.602 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+07-28 16:30:32.638 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+07-28 16:30:32.748 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+07-28 16:30:32.752 [http-nio-8080-exec-1] DEBUG c.young.test1.mapper.StudentMapper.getStudentById - ==>  Preparing: select * from tb_student where id =? 
+07-28 16:30:32.764 [http-nio-8080-exec-1] DEBUG c.young.test1.mapper.StudentMapper.getStudentById - ==> Parameters: 3(Integer)
+07-28 16:30:32.775 [http-nio-8080-exec-1] DEBUG c.young.test1.mapper.StudentMapper.getStudentById - <==      Total: 1
+07-28 16:30:32.778 [http-nio-8080-exec-1] DEBUG com.young.test1.mapper.StudentHobbyMapper.getList - ==>  Preparing: select * from tb_student_hobby where student_id = ? 
+07-28 16:30:32.778 [http-nio-8080-exec-1] DEBUG com.young.test1.mapper.StudentHobbyMapper.getList - ==> Parameters: 3(Integer)
+07-28 16:30:32.780 [http-nio-8080-exec-1] DEBUG com.young.test1.mapper.StudentHobbyMapper.getList - <==      Total: 3
+07-28 16:31:14.422 [http-nio-8080-exec-2] DEBUG com.young.test1.mapper.StudentMapper.getList_COUNT - ==>  Preparing: SELECT count(0) FROM tb_student 
+07-28 16:31:14.423 [http-nio-8080-exec-2] DEBUG com.young.test1.mapper.StudentMapper.getList_COUNT - ==> Parameters: 
+07-28 16:31:14.424 [http-nio-8080-exec-2] DEBUG com.young.test1.mapper.StudentMapper.getList_COUNT - <==      Total: 1
+07-28 16:31:14.425 [http-nio-8080-exec-2] DEBUG com.young.test1.mapper.StudentMapper.getList - ==>  Preparing: select * from tb_student LIMIT ? 
+07-28 16:31:14.425 [http-nio-8080-exec-2] DEBUG com.young.test1.mapper.StudentMapper.getList - ==> Parameters: 1(Integer)
+07-28 16:31:14.426 [http-nio-8080-exec-2] DEBUG com.young.test1.mapper.StudentMapper.getList - <==      Total: 1
+07-28 16:32:41.797 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+07-28 16:32:41.802 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

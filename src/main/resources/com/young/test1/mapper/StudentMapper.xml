@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.young.test1.mapper.StudentMapper">
+    <insert id="insert" parameterType="com.young.test1.domain.po.Student" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_student(user_name,password,real_name,age,sex)
+        value (#{userName},#{password},#{realName},#{age},#{sex})
+    </insert>
+    <update id="update" parameterType="com.young.test1.domain.po.Student">
+        update tb_student set
+        user_name=#{userName},
+        real_name=#{realName},
+        age=#{age},
+        sex=#{sex}
+        where id = #{id}
+    </update>
+    <delete id="delete">
+        delete from tb_student where id=#{id}
+    </delete>
+
+    <select id="queryStudentByUserName" resultType="com.young.test1.domain.po.Student">
+        select * from tb_student where user_name =#{name}
+    </select>
+    <select id="getStudentById" resultType="com.young.test1.domain.vo.StudentVo">
+        select * from tb_student where id =#{id}
+    </select>
+    <select id="queryStudentById" resultType="com.young.test1.domain.po.Student">
+        select * from tb_student where id =#{id}
+    </select>
+    <select id="getList" resultType="com.young.test1.domain.vo.StudentVo">
+        select * from tb_student
+        <where>
+            <if test="id!=null">
+                and id=#{id}
+            </if>
+            <if test="userName!=null and userName != '' ">
+                 and user_name=#{userName}
+            </if>
+            <if test="password!=null and password != '' ">
+                and password=#{password}
+            </if>
+        </where>
+    </select>
+
+</mapper>

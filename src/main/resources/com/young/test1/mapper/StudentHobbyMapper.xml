@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.young.test1.mapper.StudentHobbyMapper">
+    <insert id="insert" parameterType="com.young.test1.domain.po.StudentHobby" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_student_hobby(student_id,description)
+        values  (#{studentId},#{description})
+    </insert>
+
+    <insert id="insertList" parameterType="com.young.test1.domain.po.StudentHobby" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_student_hobby(student_id,description)
+        values
+        <foreach collection="stuHobDtos"  item="h" separator=",">
+            (#{id},#{h.description})
+        </foreach>
+    </insert>
+    <delete id="deleteById">
+        delete from tb_student_hobby where student_id = #{id}
+    </delete>
+    <select id="getList" resultType="com.young.test1.domain.vo.StudentHobbyVo">
+        select * from tb_student_hobby where student_id = #{id}
+    </select>
+</mapper>

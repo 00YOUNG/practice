@@ -1,0 +1,54 @@
+server:
+  port: 8080
+spring:
+  redis:
+    port: 6379
+    # Redis服务器地址
+    host: 192.168.43.111
+    # Redis数据库索引（默认为0）
+    database: 0
+    # Redis服务器连接密码（默认为空）
+    password: 12345678
+    pool:
+      # 连接池最大连接数（使用负值表示没有限制）
+      max-active: 8
+      # 连接池最大阻塞等待时间（使用负值表示没有限制）
+      max-wait: -1ms
+      # 连接池中的最大空闲连接
+      max-idle: 8
+      # 连接池中的最小空闲连接
+      min-idle: 0
+      # 连接超时时间（毫秒）
+    timeout: 5000ms
+  datasource:
+    # mysql驱动包
+    driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+    url: jdbc:p6spy:mysql://localhost:3306/demo?characterEncoding=UTF-8&serverTimezone=GMT%2B8&useSSL=false&allowMultiQueries=true
+    username: root
+    password: 123456
+    hikari:
+      #最大连接数，小于等于0会被重置为默认值10；大于零小于1会被重置为minimum-idle的值
+      maximum-pool-size: 20
+      #最小空闲连接，默认值10，小于0或大于maximum-pool-size，都会重置为maximum-pool-size
+      minimum-idle: 10
+      #连接超时时间：毫秒，小于250毫秒，否则被重置为默认值30秒
+      connection-timeout: 60000
+      #空闲连接超时时间，默认值600000（10分钟），大于等于max-lifetime且max-lifetime>0，会被重置为0；不等于0且小于10秒，会被重置为10秒。
+      idle-timeout: 500000
+      #连接最大存活时间，不等于0且小于30秒，会被重置为默认值30分钟.设置应该比mysql设置的超时时间短
+      max-lifetime: 540000
+      connection-test-query: select 1
+      #验证连接有效性的超时时间(默认是5秒，最小不能小于250毫秒)
+      validation-timeout: 5000
+mybatis:
+  # spring boot集成mybatis的方式打印sql
+  configuration:
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+    #    mapper-locations: classpath:com.shs.cts./**/*.xml
+    #    type-aliases-package: com.shs.cts.util.domain.vo
+    map-underscore-to-camel-case: true  #下划线转驼峰
+# Redis服务器连接端口
+
+
+
+

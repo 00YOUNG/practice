@@ -1,9 +1,7 @@
 package com.young.test1.controller;
 
-import com.github.pagehelper.PageInfo;
 import com.young.test1.domain.dto.QueryStudentDto;
 import com.young.test1.domain.dto.StudentDto;
-import com.young.test1.domain.vo.StudentVo;
 import com.young.test1.exception.CustomerException;
 import com.young.test1.response.Response;
 import com.young.test1.service.StudentService;
@@ -86,4 +84,12 @@ public class StudentController {
         studentService.delete(id);
         return Response.correct();
     }
+
+    @GetMapping("getMenuTree")
+    public  Response getMenuTree(){
+        studentService.getMenuTree();
+        return Response.correct();
+    }
+
+
 }

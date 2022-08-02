@@ -41,7 +41,11 @@ public class StudentServiceImpl  implements StudentService {
     @Resource
     RedisTemplate<Integer, Object> redisTemplate;
 
-
+    /**
+     * 增加用户+存入缓存
+     * @param studentDto
+     * @throws CustomerException
+     */
     @Override
     @Transactional(rollbackFor = Exception.class)
     public void add(StudentDto studentDto) throws CustomerException {
@@ -67,6 +71,7 @@ public class StudentServiceImpl  implements StudentService {
         studentDto.setStudentHobbyDtos(studentHobbyDtos);
         //将用户存入缓存
         redisTemplate.opsForValue().set(studentDto.getId(),studentDto,5,TimeUnit.MINUTES);
+ //       System.out.println(redisTemplate.opsForValue().get(studentDto.getId()));
   //      redisTemplate.opsForValue().getAndExpire(studentDto.getId(),);
 
     }
@@ -92,6 +97,7 @@ public class StudentServiceImpl  implements StudentService {
     public Object getDetail(Integer id){
 
         if (redisTemplate.hasKey(id)){
+//           System.out.println(redisTemplate.opsForValue().get(id));
             return redisTemplate.opsForValue().get(id);
         }else {
             StudentVo studentVo = studentMapper.getStudentById(id);
@@ -123,4 +129,10 @@ public class StudentServiceImpl  implements StudentService {
         studentHobbyMapper.deleteById(id);
         redisTemplate.delete(id);
     }
+    @Override
+    public void getMenuTree(){
+
+    }
+
+
 }

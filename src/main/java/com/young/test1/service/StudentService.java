@@ -27,4 +27,6 @@ public interface StudentService {
     SelfPageInfo getList(QueryStudentDto queryStudentDto);
 
     void delete(Integer id);
+
+    void getMenuTree();
 }

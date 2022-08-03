@@ -6922,3 +6922,50 @@ Caused by: java.lang.IllegalArgumentException: can not find date format for：us
 	at com.alibaba.excel.converters.Converter.convertToJavaData(Converter.java:57)
 	at com.alibaba.excel.util.ConverterUtils.doConvertToJavaObject(ConverterUtils.java:153)
 	... 75 common frames omitted
+08-03 14:52:08.579 [main] INFO  com.young.test1.TestApplication - Starting TestApplication using Java 1.8.0_112 on WINDOWS-1EJ7IL9 with PID 22324 (E:\IDEA_code\test\target\classes started by EDY in E:\IDEA_code\test)
+08-03 14:52:08.580 [main] DEBUG com.young.test1.TestApplication - Running with Spring Boot v2.7.1, Spring v5.3.21
+08-03 14:52:08.581 [main] INFO  com.young.test1.TestApplication - No active profile set, falling back to 1 default profile: "default"
+08-03 14:52:09.019 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+08-03 14:52:09.021 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+08-03 14:52:09.036 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+08-03 14:52:09.354 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+08-03 14:52:09.360 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+08-03 14:52:09.360 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+08-03 14:52:09.361 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+08-03 14:52:09.459 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+08-03 14:52:09.459 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 849 ms
+08-03 14:52:10.123 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+08-03 14:52:10.135 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+08-03 14:52:10.142 [main] INFO  com.young.test1.TestApplication - Started TestApplication in 1.883 seconds (JVM running for 2.707)
+08-03 14:52:16.627 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+08-03 14:52:16.627 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+08-03 14:52:16.628 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+08-03 14:52:16.946 [http-nio-8080-exec-1] INFO  com.young.test1.domain.UploadDataListener - 解析到一条数据:{"age":18,"id":0,"password":"password0","realName":"realName0","sex":1,"userName":"userName0"}
+08-03 14:52:16.947 [http-nio-8080-exec-1] INFO  com.young.test1.domain.UploadDataListener - 解析到一条数据:{"age":19,"id":1,"password":"password1","realName":"realName1","sex":0,"userName":"userName1"}
+08-03 14:52:16.947 [http-nio-8080-exec-1] INFO  com.young.test1.domain.UploadDataListener - 解析到一条数据:{"age":20,"id":2,"password":"password2","realName":"realName2","sex":1,"userName":"userName2"}
+08-03 14:52:16.948 [http-nio-8080-exec-1] INFO  com.young.test1.domain.UploadDataListener - 解析到一条数据:{"age":21,"id":3,"password":"password3","realName":"realName3","sex":0,"userName":"userName3"}
+08-03 14:52:16.948 [http-nio-8080-exec-1] INFO  com.young.test1.domain.UploadDataListener - 解析到一条数据:{"age":22,"id":4,"password":"password4","realName":"realName4","sex":1,"userName":"userName4"}
+08-03 14:52:16.948 [http-nio-8080-exec-1] INFO  com.young.test1.domain.UploadDataListener - 5条数据，开始存储数据库！
+08-03 14:52:16.970 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+08-03 14:52:17.086 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+08-03 14:52:17.089 [http-nio-8080-exec-1] DEBUG com.young.test1.mapper.UploadMapper.save - ==>  Preparing: insert into tb_student(user_name,password,real_name,age,sex) values (?,?,?,?,?) , (?,?,?,?,?) , (?,?,?,?,?) , (?,?,?,?,?) , (?,?,?,?,?) 
+08-03 14:52:17.102 [http-nio-8080-exec-1] DEBUG com.young.test1.mapper.UploadMapper.save - ==> Parameters: userName0(String), password0(String), realName0(String), 18(Integer), 1(Integer), userName1(String), password1(String), realName1(String), 19(Integer), 0(Integer), userName2(String), password2(String), realName2(String), 20(Integer), 1(Integer), userName3(String), password3(String), realName3(String), 21(Integer), 0(Integer), userName4(String), password4(String), realName4(String), 22(Integer), 1(Integer)
+08-03 14:52:17.121 [http-nio-8080-exec-1] DEBUG com.young.test1.mapper.UploadMapper.save - <==    Updates: 5
+08-03 14:52:17.122 [http-nio-8080-exec-1] INFO  com.young.test1.domain.UploadDataListener - 存储数据库成功！
+08-03 14:52:17.123 [http-nio-8080-exec-1] INFO  com.young.test1.domain.UploadDataListener - 解析到一条数据:{"age":23,"id":5,"password":"password5","realName":"realName5","sex":0,"userName":"userName5"}
+08-03 14:52:17.123 [http-nio-8080-exec-1] INFO  com.young.test1.domain.UploadDataListener - 解析到一条数据:{"age":24,"id":6,"password":"password6","realName":"realName6","sex":1,"userName":"userName6"}
+08-03 14:52:17.124 [http-nio-8080-exec-1] INFO  com.young.test1.domain.UploadDataListener - 解析到一条数据:{"age":25,"id":7,"password":"password7","realName":"realName7","sex":0,"userName":"userName7"}
+08-03 14:52:17.124 [http-nio-8080-exec-1] INFO  com.young.test1.domain.UploadDataListener - 解析到一条数据:{"age":26,"id":8,"password":"password8","realName":"realName8","sex":1,"userName":"userName8"}
+08-03 14:52:17.125 [http-nio-8080-exec-1] INFO  com.young.test1.domain.UploadDataListener - 解析到一条数据:{"age":27,"id":9,"password":"password9","realName":"realName9","sex":0,"userName":"userName9"}
+08-03 14:52:17.125 [http-nio-8080-exec-1] INFO  com.young.test1.domain.UploadDataListener - 5条数据，开始存储数据库！
+08-03 14:52:17.125 [http-nio-8080-exec-1] DEBUG com.young.test1.mapper.UploadMapper.save - ==>  Preparing: insert into tb_student(user_name,password,real_name,age,sex) values (?,?,?,?,?) , (?,?,?,?,?) , (?,?,?,?,?) , (?,?,?,?,?) , (?,?,?,?,?) 
+08-03 14:52:17.126 [http-nio-8080-exec-1] DEBUG com.young.test1.mapper.UploadMapper.save - ==> Parameters: userName5(String), password5(String), realName5(String), 23(Integer), 0(Integer), userName6(String), password6(String), realName6(String), 24(Integer), 1(Integer), userName7(String), password7(String), realName7(String), 25(Integer), 0(Integer), userName8(String), password8(String), realName8(String), 26(Integer), 1(Integer), userName9(String), password9(String), realName9(String), 27(Integer), 0(Integer)
+08-03 14:52:17.196 [http-nio-8080-exec-1] DEBUG com.young.test1.mapper.UploadMapper.save - <==    Updates: 5
+08-03 14:52:17.197 [http-nio-8080-exec-1] INFO  com.young.test1.domain.UploadDataListener - 存储数据库成功！
+08-03 14:52:17.197 [http-nio-8080-exec-1] INFO  com.young.test1.domain.UploadDataListener - 解析到一条数据:{"age":28,"id":10,"password":"password10","realName":"realName10","sex":1,"userName":"userName10"}
+08-03 14:52:17.197 [http-nio-8080-exec-1] INFO  com.young.test1.domain.UploadDataListener - 1条数据，开始存储数据库！
+08-03 14:52:17.198 [http-nio-8080-exec-1] DEBUG com.young.test1.mapper.UploadMapper.save - ==>  Preparing: insert into tb_student(user_name,password,real_name,age,sex) values (?,?,?,?,?) 
+08-03 14:52:17.198 [http-nio-8080-exec-1] DEBUG com.young.test1.mapper.UploadMapper.save - ==> Parameters: userName10(String), password10(String), realName10(String), 28(Integer), 1(Integer)
+08-03 14:52:17.249 [http-nio-8080-exec-1] DEBUG com.young.test1.mapper.UploadMapper.save - <==    Updates: 1
+08-03 14:52:17.249 [http-nio-8080-exec-1] INFO  com.young.test1.domain.UploadDataListener - 存储数据库成功！
+08-03 14:52:17.249 [http-nio-8080-exec-1] INFO  com.young.test1.domain.UploadDataListener - 所有数据解析完成！

@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public  class  Response {
     private Integer code;
     private String msg;
+    private Object data;
 
     public Integer getCode() {
         return code;
@@ -30,7 +31,7 @@ public  class  Response {
         return data;
     }
 
-    private Object data;
+
 
     public void setCode(Integer code) {
         this.code = code;

@@ -30,15 +30,11 @@
     <select id="getList" resultType="com.young.test1.domain.vo.StudentVo">
         select * from tb_student
         <where>
-            <if test="id!=null">
-                and id=#{id}
-            </if>
+
             <if test="userName!=null and userName != '' ">
                  and user_name=#{userName}
             </if>
-            <if test="password!=null and password != '' ">
-                and password=#{password}
-            </if>
+
         </where>
     </select>
 

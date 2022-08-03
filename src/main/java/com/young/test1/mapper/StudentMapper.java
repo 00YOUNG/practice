@@ -30,7 +30,7 @@ public interface StudentMapper {
 
     void update(Student student);
 
-    List getList(@Param("id") Integer id, @Param("userName") String userName, @Param("password") String password);
+    List getList( @Param("userName") String userName);
 
     void delete(@Param("id") Integer id);
 }

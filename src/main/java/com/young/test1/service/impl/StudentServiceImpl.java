@@ -109,18 +109,11 @@ public class StudentServiceImpl  implements StudentService {
     @Override
     public SelfPageInfo getList(QueryStudentDto queryStudentDto){
         PageHelper.startPage(queryStudentDto.getPageNumber(),queryStudentDto.getPageSize());
-        PageInfo pageInfo = new PageInfo(
-                studentMapper.getList(queryStudentDto.getId(),queryStudentDto.getUserName(),queryStudentDto.getPassword()));
-
-        if (redisTemplate.hasKey(queryStudentDto.getId())){
-            SelfPageInfo selfPageInfo = new SelfPageInfo(Long.valueOf(pageInfo.getTotal()).intValue(), pageInfo.getPageNum(), pageInfo.getPageSize()
-                    ,pageInfo.getPages(), redisTemplate.opsForValue().get(queryStudentDto.getId()));
-            return selfPageInfo ;
-        }else {
-            SelfPageInfo selfPageInfo = new SelfPageInfo(Long.valueOf(pageInfo.getTotal()).intValue(), pageInfo.getPageNum(), pageInfo.getPageSize()
+        PageInfo pageInfo = new PageInfo(studentMapper.getList(queryStudentDto.getUserName()));
+        SelfPageInfo selfPageInfo = new SelfPageInfo(Long.valueOf(pageInfo.getTotal()).intValue(), pageInfo.getPageNum(), pageInfo.getPageSize()
                     ,pageInfo.getPages(),pageInfo.getList());
             return  selfPageInfo;
-        }
+
     }
     @Override
     @Transactional(rollbackFor = Exception.class)

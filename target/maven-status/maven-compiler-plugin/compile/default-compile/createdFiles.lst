@@ -1,0 +1,17 @@
+com\young\test1\mapper\PermissionTreeMapper.class
+com\young\test1\service\StudentService.class
+com\young\test1\domain\dto\QueryStudentDto.class
+com\young\test1\domain\dto\StudentHobbyDto.class
+com\young\test1\controller\loginTest.class
+com\young\test1\domain\UploadData.class
+com\young\test1\mapper\UploadMapper.class
+com\young\test1\domain\dto\StudentDto.class
+com\young\test1\domain\UploadDataListener.class
+com\young\test1\guava\GuavaCache.class
+com\young\test1\domain\vo\SelfPageInfo.class
+com\young\test1\response\Response.class
+com\young\test1\Captcha.class
+com\young\test1\domain\dto\PermissionTreeDto.class
+com\young\test1\domain\dto\PageInfoDto.class
+com\young\test1\exception\CustomerException.class
+com\young\test1\domain\Info.class

@@ -1,6 +1,15 @@
 server:
   port: 8080
+#文件上传根目录
+file:
+  path: C:\Users\EDY\Desktop\file\
 spring:
+  #文件上传大小配置
+  servlet:
+    multipart:
+      max-file-size: 1024MB
+      max-request-size: 1024MB
+
   redis:
     port: 6379
     # Redis服务器地址

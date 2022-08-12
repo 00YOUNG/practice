@@ -20,6 +20,7 @@ import com.alibaba.fastjson.JSON;
 import com.young.test1.mapper.UploadMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import javax.annotation.Resource;
 

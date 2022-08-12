@@ -28,6 +28,7 @@ import lombok.extern.slf4j.Slf4j;
 @RestController
 @RequestMapping("file")
 @Slf4j
+@CrossOrigin
 public class FileController {
 
     //定义路径变量
